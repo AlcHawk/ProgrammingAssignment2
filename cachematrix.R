@@ -1,5 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Put comments here that give an overall description of what your functions do
 ## Creating a cache of matrix for the other function use 
 ## Write a short comment describing this function
 
