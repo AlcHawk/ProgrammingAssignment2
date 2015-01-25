@@ -8,12 +8,12 @@
 # getinverse: get the value of the inverse matrix
 makeCacheMatrix <- function(x = matrix()) {
         inverse   <- NULL               # inverse
-        set <- function(y) {            # construct a func that sets x to its input param
+        set <- function(y) {            # construct a func that sets x to its input parameter
                 x <<- y                 # set to new matrix
                 inverse <<- NULL        # matrix had changed - inverse sets to 0
         }
         get     <- function() x                            # construct a func that returns x
-        setinverse <- function(inv) inverse <<- inv        # construct a func that sets "inverse" to its input param
+        setinverse <- function(inv) inverse <<- inv        # construct a func that sets "inverse" to its input parameter
         getinverse <- function()    inverse                # construct a func that returns i
         
         list(set = set, get = get, setinv = setinverse, getinv = getinverse) # return list of functions
